@@ -1,0 +1,36 @@
+.wrapper1 {
+  position: relative;
+  .container {
+    // border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    //display: flex;
+    font-family: "Poppins", sans-serif;
+  }
+}
+.heading {
+  font-size: 60px;
+  margin-bottom: 8px;
+  //   font-family: Poppins, sans-serif;
+  line-height: 1.4074;
+  font-weight: 900;
+}
+.tag {
+  padding: 0 24%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #717173;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+
+  padding: 60px 0 20px;
+}

@@ -1,0 +1,52 @@
+.banner {
+  background-color: #101010;
+  background-image: url("../../Assets/IMG_3339.JPG") !important;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+  position: relative;
+  .content_container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    p {
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      display: block;
+      margin-bottom: 20px;
+      color: rgba(198, 201, 216, 0.75);
+    }
+    h1 {
+      font-size: 85px;
+      font-weight: Black 900;
+      font-family: Montserrat, sans-serif;
+      line-height: 115px;
+      text-transform: inherit;
+      // width: 70%;
+      color: #fff;
+      margin: 0;
+      span {
+        color: #1eb4fd;
+        font-weight: Black 900;
+        font-family: Montserrat, sans-serif;
+      }
+    }
+
+    h2 {
+      font-family: Poppins, sans-serif;
+      line-height: 2.4074;
+      color: #1f1f25;
+      font-size: 34px;
+      margin: 0;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
+  }
+}
