@@ -4,12 +4,12 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 950px;
+  height: 54em;
   position: relative;
   .content_container {
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 54%;
+    left: 32%;
     transform: translate(-50%, -50%);
     text-align: left;
 
@@ -47,6 +47,43 @@
       color: #fff;
       text-transform: uppercase;
       letter-spacing: 6px;
+    }
+  }
+}
+@media screen and (max-width: 1700px) {
+  .banner {
+    .content_container {
+      top: 55%;
+      left: 35%;
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .banner {
+    height: 48em;
+    .content_container {
+      top: 55%;
+      left: 35%;
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner {
+    height: 45em;
+    .content_container {
+      left: 38%;
+      h1 {
+        font-size: 65px;
+        line-height: 100px;
+      }
     }
   }
 }

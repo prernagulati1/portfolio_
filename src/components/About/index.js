@@ -3,6 +3,7 @@ import "./style.scss";
 import AboutImg from "../../Assets/about.JPG";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { mainSkills, awards, experience, education } from "./constants";
+
 export class About extends Component {
   state = {
     tabs: ["Main Skills", "Awards", "Experience", "Education & Certification"],

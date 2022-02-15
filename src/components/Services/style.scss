@@ -51,7 +51,7 @@
             font-weight: 400;
             margin-bottom: 23px;
             display: inline-flex;
-            color: #f9004d;
+            color: #1eb4fd;
           }
           div {
             h3 {
@@ -69,7 +69,7 @@
       }
       :hover {
         transform: scale(1.02);
-        background: #f9004d;
+        background: #1eb4fd;
         transition: transform 0.4s;
         color: #fff !important;
         svg {
@@ -101,4 +101,9 @@
   height: 100%;
   z-index: 5;
   opacity: 0;
+}
+@media screen and (max-width: 1550px) {
+  .container {
+    width: 80% !important;
+  }
 }

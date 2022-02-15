@@ -5,6 +5,7 @@ import { ReactComponent as Linkedin } from "../../Assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../Assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../Assets/twitter.svg";
 import { ReactComponent as DownloadIcon } from "../../Assets/download.svg";
+
 import "./style.scss";
 import Button from "@mui/material/Button";
 import { Link } from "@mui/material";
@@ -30,25 +31,25 @@ class Header extends React.Component {
                 className={active === 1 ? "active" : ""}
                 onClick={() => this.activeHandler(1)}
               >
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li
                 className={active === 2 ? "active" : ""}
                 onClick={() => this.activeHandler(2)}
               >
-                <a href="#">About</a>
+                <a href="/About">About</a>
               </li>
               <li
                 className={active === 3 ? "active" : ""}
                 onClick={() => this.activeHandler(3)}
               >
-                <a href="#"> Service</a>
+                <a href="service"> Service</a>
               </li>
               <li
                 className={active === 4 ? "active" : ""}
                 onClick={() => this.activeHandler(4)}
               >
-                <a href="#"> Projects</a>
+                <a href="project"> Projects</a>
               </li>
             </ul>
           </nav>

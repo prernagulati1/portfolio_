@@ -19,11 +19,13 @@
       margin: 0 15px;
       position: relative;
     }
+
     a {
       text-decoration: none;
       color: #fff;
     }
   }
+
   nav {
     display: flex;
   }
@@ -66,10 +68,10 @@
   .active {
     color: #1eb4fd !important;
     border-bottom: 3px solid #1eb4fd;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+
+    bottom: 0;
     a {
-      color: #1eb4fd;
+      color: #1eb4fd !important;
     }
   }
 }

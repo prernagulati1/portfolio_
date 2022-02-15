@@ -108,3 +108,95 @@
     padding-top: 20px;
   }
 }
+@media screen and (min-device-width: 1850px) and (max-device-width: 2000px) {
+  .about_container_img {
+    img {
+      width: 85% !important;
+    }
+  }
+  .about .about_container {
+    width: 75%;
+    .react-tabs__tab-list .react-tabs__tab {
+      font-size: 18px;
+    }
+    .react-tabs__tab-panel li {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .about_container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .about {
+    height: 780px;
+    .about_container_img {
+      padding: 0 20px;
+    }
+    .about_container {
+      width: 80%;
+      .about_container_content {
+        h2 {
+          font-size: 50px;
+        }
+        & > p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .about {
+    height: 780px;
+    .about_container {
+      width: 90%;
+      .about_container_img {
+        padding: 0 20px;
+      }
+      .about_container_content {
+        padding: 25px 25px;
+        h2 {
+          font-size: 40px;
+          color: #fff;
+          font-weight: 700;
+        }
+        & > p {
+          font-size: 16px;
+          color: rgba(198, 201, 216, 0.75);
+          line-height: 30px;
+          font-weight: 300;
+        }
+
+        .react-tabs__tab-list .react-tabs__tab {
+          font-size: 18px;
+          margin: 0 5px 0 20px;
+        }
+        .react-tabs__tab {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .about {
+    height: 650px;
+    .about_container {
+      width: 98%;
+      .about_container_content {
+        padding: 0px 10px;
+
+        .react-tabs__tab-list .react-tabs__tab {
+          margin: 0 5px 0 20px;
+        }
+      }
+    }
+  }
+}
