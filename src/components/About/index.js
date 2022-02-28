@@ -51,7 +51,7 @@ export class About extends Component {
 
   render() {
     return (
-      <div className="about ">
+      <div className="about">
         <div className="about_container">
           <div className="about_container_img">
             <img src={AboutImg} />

@@ -5,10 +5,14 @@ import { ReactComponent as Linkedin } from "../../Assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../Assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../Assets/twitter.svg";
 import { ReactComponent as DownloadIcon } from "../../Assets/download.svg";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import GoogleIcon from "@mui/icons-material/Google";
+import RedditIcon from "@mui/icons-material/Reddit";
 
 import "./style.scss";
 import Button from "@mui/material/Button";
 import { Link } from "@mui/material";
+import CV from "../../Assets/resume.pdf";
 class Header extends React.Component {
   state = {
     active: 1,
@@ -17,13 +21,17 @@ class Header extends React.Component {
     // const { active } = this.state;
     this.setState({ active: index });
   };
+  ScrollAbout = () => {
+    var elmnt = document.getElementsById("service");
+    elmnt.scrollIntoView();
+  };
   render() {
     const { active } = this.state;
     return (
       <div className="header">
         <div className="header_left">
           <nav>
-            {/* <div>
+            {/* <div className="logo">
               <img src={Logo} />
             </div> */}
             <ul>
@@ -37,13 +45,18 @@ class Header extends React.Component {
                 className={active === 2 ? "active" : ""}
                 onClick={() => this.activeHandler(2)}
               >
-                <a href="/About">About</a>
+                <a onclick="smoothScroll(document.getElementById('about'))">
+                  About
+                </a>
               </li>
               <li
                 className={active === 3 ? "active" : ""}
                 onClick={() => this.activeHandler(3)}
               >
-                <a href="service"> Service</a>
+                <Link href="service" onClick={() => this.ScrollAbout()}>
+                  {" "}
+                  Service
+                </Link>
               </li>
               <li
                 className={active === 4 ? "active" : ""}
@@ -58,20 +71,36 @@ class Header extends React.Component {
         <div className="header_right">
           <ul>
             <li>
-              <Facebook />
+              <a href="mailto: muppal88@gmail.com" target="_blank">
+                <GoogleIcon />
+              </a>
             </li>
             <li>
-              <Linkedin />
+              <a
+                href="https://www.linkedin.com/in/mayankuppal/"
+                target="_blank"
+              >
+                <Linkedin />
+              </a>
             </li>
             <li>
-              <Instagram />
+              <a href="https://twitter.com/iammayankuppal" target="_blank">
+                <Twitter />
+              </a>
             </li>
             <li>
-              <Twitter />
+              <a href="https://telegram.me/mayankuppal" target="_blank">
+                <TelegramIcon />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/user/muppal88/" target="_blank">
+                <RedditIcon />
+              </a>
             </li>
           </ul>
 
-          <a href="pdf.pdf" target="_blank">
+          <a href={CV} download>
             <Button variant="outlined" size="medium" className="mr-5">
               {/* <DownloadIcon /> */}
               Download CV

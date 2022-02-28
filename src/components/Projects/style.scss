@@ -1,44 +1,42 @@
 .project {
   background-color: #191919;
   height: 1350px;
+  .grid_container {
+    .portfolio:first-child {
+      background-image: url("../../Assets/01.png");
+    }
+    .portfolio:nth-child(2) {
+      background-image: url("../../Assets/02.png");
+    }
+    .portfolio:nth-child(3) {
+      background-image: url("../../Assets/03.png");
+    }
+    .portfolio:nth-child(4) {
+      background-image: url("../../Assets/04.png");
+    }
+    .portfolio:nth-child(5) {
+      background-image: url("../../Assets/05.png");
+    }
+    .portfolio:nth-child(6) {
+      background-image: url("../../Assets/04.png");
+    }
+  }
   .portfolio {
     position: relative;
     min-height: 400px;
     width: 100%;
     padding-top: 35%;
-    // border: 1px solid white;
     border-radius: 5px;
     background-size: cover;
     background-position: 50%;
     background-color: #0a0a0a;
-    // -webkit-transform: translateY(38px);
-    // transform: translateY(38px);
-    transition: -webkit-transform 0.28s ease;
+    background-repeat: no-repeat;
     opacity: 1;
-    // z-index: -1;
     background-image: url("../../Assets/project.jpg");
   }
   .portfolio:hover {
-    // -webkit-transform: translate(20px);
     transform: scale(1.05);
-
-    background-image: (
-      url("../../Assets/project.jpg") linear,
-      left top,
-      left bottom,
-      color-stop(1%, #f6004c),
-      to(#000)
-    );
-    // background-image: -webkit-gradient(
-    //   linear,
-    //   left top,
-    //   left bottom,
-    //   color-stop(1%, #f6004c),
-    //   to(#000)
-    // );
-    // opacity: 0.2;
     transition: transform 0.2s;
-    // z-index: 5;
   }
   Button {
     text-align: center;

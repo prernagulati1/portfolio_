@@ -4,7 +4,7 @@ import { ReactComponent as Icon } from "../../Assets/icon.svg";
 export class Service extends Component {
   render() {
     return (
-      <div className="service">
+      <div className="service" id="service">
         <div className="container">
           <div className="container_title">
             <h2>My Awesome Service</h2>
@@ -20,7 +20,35 @@ export class Service extends Component {
                   <Icon />
                 </div>
                 <div>
-                  <h3>UX Research</h3>
+                  <h3>UX Design</h3>
+                  <p>
+                    I throw myself down among the tall grass by the stream as I
+                    lie close to the earth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid1">
+              <div className="service1">
+                <div>
+                  <Icon />
+                </div>
+                <div>
+                  <h3>Interaction Design</h3>
+                  <p>
+                    I throw myself down among the tall grass by the stream as I
+                    lie close to the earth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid1">
+              <div className="service1">
+                <div>
+                  <Icon />
+                </div>
+                <div>
+                  <h3>Visual Design</h3>
                   <p>
                     I throw myself down among the tall grass by the stream as I
                     lie close to the earth.
@@ -48,35 +76,7 @@ export class Service extends Component {
                   <Icon />
                 </div>
                 <div>
-                  <h3>UX Research</h3>
-                  <p>
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid1">
-              <div className="service1">
-                <div>
-                  <Icon />
-                </div>
-                <div>
-                  <h3>UX Research</h3>
-                  <p>
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid1">
-              <div className="service1">
-                <div>
-                  <Icon />
-                </div>
-                <div>
-                  <h3>UX Research</h3>
+                  <h3>UI Design</h3>
                   <p>
                     I throw myself down among the tall grass by the stream as I
                     lie close to the earth.
