@@ -25,6 +25,22 @@ class Header extends React.Component {
     var elmnt = document.getElementsById("service");
     elmnt.scrollIntoView();
   };
+
+  componentDidUpdate = () => {
+    window.addEventListener("scroll", this.isSticky);
+    return () => {
+      window.removeEventListener("scroll", this.isSticky);
+    };
+  };
+
+  isSticky = (e) => {
+    const header = document.querySelector(".header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 100
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
+
   render() {
     const { active } = this.state;
     return (
