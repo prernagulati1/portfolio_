@@ -10,7 +10,10 @@
       overflow: visible !important;
     }
     .__react_modal_image__header {
-      display: none;
+      a:nth-child(1),
+      a:nth-child(2) {
+        display: none;
+      }
     }
     .modal {
       border-radius: 5px;
