@@ -1,10 +1,28 @@
 .project {
   background-color: #191919;
-  height: 1350px;
+  height: 1200px;
+
   .grid_container {
-    .portfolio:first-child {
-      background-image: url("../../Assets/01.png");
+    .__react_modal_image__caption {
+      display: none;
     }
+    .__react_modal_image__modal_container {
+      overflow: visible !important;
+    }
+    .__react_modal_image__header {
+      display: none;
+    }
+    .modal {
+      border-radius: 5px;
+      overflow: visible !important;
+      .modal_img {
+        width: 50% !important;
+        height: 50% !important;
+      }
+    }
+    // .portfolio:first-child {
+    //   background-image: url("../../Assets/01.png");
+    // }
     .portfolio:nth-child(2) {
       background-image: url("../../Assets/02.png");
     }
@@ -64,5 +82,5 @@
   }
 }
 .height {
-  height: 1800px;
+  height: 1500px;
 }

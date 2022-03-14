@@ -6,8 +6,8 @@ import { mainSkills, awards, experience, education } from "./constants";
 
 export class About extends Component {
   state = {
-    tabs: ["Main Skills", "Awards", "Experience", "Education & Certification"],
-    selected: "Main Skills",
+    tabs: ["Experience", "Education"],
+    selected: "Experience",
     constantData: [],
   };
   componentDidMount() {
@@ -57,13 +57,18 @@ export class About extends Component {
             <img src={AboutImg} />
           </div>
           <div className="about_container_content">
-            <h2>About Me</h2>
+            <h2>Honestly Me</h2>
+            {/* <pre> */}
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which dont look even slightly
-              believable. If you are going to use a passage of Lorem Ipsum,
+              Yeah, I'm Hard Working, BLAH BLAH BLAH.<br></br> Instead, here are
+              some important insights covered in just 2 years of Journey!
+              <br></br>- Worked on more than{" "}
+              <b>40 Websites and Landing Pages</b> <br></br>- Designed more than{" "}
+              <b>half a dozen</b> fully functional Apps, which have an amazing
+              ROI <br></br>- Conceptualized and Worked on
+              <b> 5+ SaaS products</b>
             </p>
+            {/* </pre> */}
             <div className="about_tabs">
               <Tabs>
                 <TabList>
@@ -84,68 +89,24 @@ export class About extends Component {
                     <ul>
                       <li>
                         <p>
-                          User experience design - <span>UI/UX</span>
-                        </p>
-                        Delight the user and make it work.
-                      </li>
-                      <li>
-                        <p>
-                          Web and user interface design -{" "}
-                          <span> Development</span>
-                        </p>
-                        Websites, web experiences, ...
-                      </li>
-                      <li>
-                        <p>
-                          Interaction design - <span>Animation</span>
-                        </p>
-                        I like to move it move it.
-                      </li>
-                    </ul>
-                  </TabPanel>
-                  <TabPanel>
-                    <ul>
-                      <li>
-                        <p>
-                          Awwwards.com - <span> Winner</span>
-                        </p>
-                        2019 - 2020
-                      </li>
-                      <li>
-                        <p>
-                          Web and user interface design -{" "}
-                          <span> Development</span>
-                        </p>
-                        Websites, web experiences, ...
-                      </li>
-                      <li>
-                        <p>
-                          Interaction design - <span>Animation</span>
-                        </p>
-                        I like to move it move it.
-                      </li>
-                    </ul>
-                  </TabPanel>
-                  <TabPanel>
-                    <ul>
-                      <li>
-                        <p>
-                          UI/UX Designer - <span>Appinventiv</span>
+                          AppInventiv
+                          {/* <span>Mar 2021 - Present</span> */}
                         </p>
                         2021 - Current
                       </li>
                       <li>
                         <p>
-                          Web and user interface design -{" "}
-                          <span> Development</span>
+                          Gensofts Infosolutions Pvt. Ltd.
+                          {/* <span> Development</span> */}
                         </p>
-                        Websites, web experiences, ...
+                        Feb 2021 - Mar 2021 · 2 mos
                       </li>
                       <li>
                         <p>
-                          Interaction design - <span>Animation</span>
+                          Mauka (Earlier Pracify)
+                          {/* <span>Animation</span> */}
                         </p>
-                        I like to move it move it.
+                        Sept 2020 - Jan 2021
                       </li>
                     </ul>
                   </TabPanel>
@@ -153,27 +114,28 @@ export class About extends Component {
                     <ul>
                       <li>
                         <p>
-                          BTech in CSE - <span>HMRITM</span>
+                          BTech in CSE -{" "}
+                          <span>Guru Gobind Singh Indraprastha University</span>
                         </p>
                         2017-2021
                       </li>
                       <li>
                         <p>
-                          Web and user interface design -{" "}
-                          <span> Development</span>
+                          Schooling -{" "}
+                          <span> Arwachin Bharti Bhawan Sr. Sec. School </span>
                         </p>
-                        Websites, web experiences, ...
+                        2010-2017
                       </li>
-                      <li>
+                      {/* <li>
                         <p>
                           Interaction design - <span>Animation</span>
                         </p>
                         I like to move it move it.
-                      </li>
+                      </li> */}
                     </ul>
                   </TabPanel>
                 </div>
-                <div>{this.tabPanel()}</div>
+                {/* <div>{this.tabPanel()}</div> */}
               </Tabs>
             </div>
           </div>

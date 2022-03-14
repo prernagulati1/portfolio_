@@ -19,7 +19,7 @@
       // height: 630px;
       // border-radius: 8px;
       padding: 0 25px;
-      width: 100%;
+      width: 50%;
       // background-image: url("../../Assets/about.svg") !important;
       // background-position: 50%;
       // background-repeat: no-repeat;
@@ -127,9 +127,15 @@
   }
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1650px) {
   .about_container {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .about_container {
+    width: 78%;
   }
 }
 @media screen and (max-width: 1550px) {
