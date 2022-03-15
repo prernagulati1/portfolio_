@@ -8,14 +8,15 @@ import { ReactComponent as DownloadIcon } from "../../Assets/download.svg";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import GoogleIcon from "@mui/icons-material/Google";
 import RedditIcon from "@mui/icons-material/Reddit";
+import { Link } from "react-scroll";
 
 import "./style.scss";
 import Button from "@mui/material/Button";
-import { Link } from "@mui/material";
+// import { Link } from "@mui/material";
 import CV from "../../Assets/resume.pdf";
 class Header extends React.Component {
   state = {
-    active: 1,
+    // active: 1,
   };
   activeHandler = (index) => {
     // const { active } = this.state;
@@ -50,36 +51,23 @@ class Header extends React.Component {
             {/* <div className="logo">
               <img src={Logo} />
             </div> */}
+
             <ul>
-              <li
-                className={active === 1 ? "active" : ""}
-                onClick={() => this.activeHandler(1)}
-              >
-                <a href="/">Home</a>
-              </li>
-              <li
-                className={active === 2 ? "active" : ""}
-                onClick={() => this.activeHandler(2)}
-              >
-                <a onclick="smoothScroll(document.getElementById('about'))">
-                  About
-                </a>
-              </li>
-              <li
-                className={active === 3 ? "active" : ""}
-                onClick={() => this.activeHandler(3)}
-              >
-                <Link href="service" onClick={() => this.ScrollAbout()}>
-                  {" "}
-                  Service
-                </Link>
-              </li>
-              <li
-                className={active === 4 ? "active" : ""}
-                onClick={() => this.activeHandler(4)}
-              >
-                <a href="project"> Projects</a>
-              </li>
+              <Link activeClass="active" to="banner" spy={true} smooth={true}>
+                <li> Home </li>
+              </Link>
+
+              <Link to="about" spy={true} smooth={true}>
+                <li> About</li>
+              </Link>
+
+              <Link to="service" spy={true} smooth={true}>
+                <li> Service</li>
+              </Link>
+
+              <Link to="project" spy={true} smooth={true}>
+                <li> Projects</li>
+              </Link>
             </ul>
           </nav>
         </div>

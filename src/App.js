@@ -38,12 +38,6 @@ function App() {
       <About />
       <Service />
       <Project />
-      {/* <Routes>
-          <Route path="/" element={<Banner />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/project" element={<Project />} />
-        </Routes> */}
 
       <button
         id="go-to-top"
